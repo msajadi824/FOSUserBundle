@@ -36,7 +36,7 @@
         "symfony/doctrine-bridge": "<2.7"
     },
     "require-dev": {
-        "doctrine/doctrine-bundle": "^^2.1",
+        "doctrine/doctrine-bundle": "^2.1",
         "friendsofphp/php-cs-fixer": "^2.2",
         "symfony/mailer": "5.1.*",
         "symfony/console": "^5.1",
