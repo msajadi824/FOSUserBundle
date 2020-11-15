@@ -13,7 +13,7 @@ namespace FOS\UserBundle\Mailer;
 
 use FOS\UserBundle\Model\UserInterface;
 use Twig\Environment;
-use Symfony\Contracts\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 /**
  * @author Thibault Duplessis <thibault.duplessis@gmail.com>

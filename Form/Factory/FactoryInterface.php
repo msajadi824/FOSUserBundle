@@ -11,7 +11,7 @@
 
 namespace FOS\UserBundle\Form\Factory;
 
-use Symfony\Contracts\Form\FormInterface;
+use Symfony\Component\Form\FormInterface;
 
 interface FactoryInterface
 {

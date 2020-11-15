@@ -11,13 +11,13 @@
 
 namespace FOS\UserBundle\DependencyInjection;
 
-use Symfony\Contracts\Config\Definition\Processor;
-use Symfony\Contracts\Config\FileLocator;
-use Symfony\Contracts\DependencyInjection\Alias;
-use Symfony\Contracts\DependencyInjection\ContainerBuilder;
-use Symfony\Contracts\DependencyInjection\Loader\XmlFileLoader;
-use Symfony\Contracts\DependencyInjection\Reference;
-use Symfony\Contracts\HttpKernel\DependencyInjection\Extension;
+use Symfony\Component\Config\Definition\Processor;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\Alias;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use Symfony\Component\DependencyInjection\Reference;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class FOSUserExtension extends Extension
 {

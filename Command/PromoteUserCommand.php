@@ -12,7 +12,7 @@
 namespace FOS\UserBundle\Command;
 
 use FOS\UserBundle\Util\UserManipulator;
-use Symfony\Contracts\Console\Output\OutputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * @author Matthieu Bontemps <matthieu@knplabs.com>

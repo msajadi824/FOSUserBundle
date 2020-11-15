@@ -12,9 +12,9 @@
 namespace FOS\UserBundle\Tests\Routing;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Contracts\Config\FileLocator;
-use Symfony\Contracts\Routing\Loader\XmlFileLoader;
-use Symfony\Contracts\Routing\RouteCollection;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\Routing\Loader\XmlFileLoader;
+use Symfony\Component\Routing\RouteCollection;
 
 class RoutingTest extends TestCase
 {

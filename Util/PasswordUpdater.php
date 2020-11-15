@@ -12,9 +12,9 @@
 namespace FOS\UserBundle\Util;
 
 use FOS\UserBundle\Model\UserInterface;
-use Symfony\Contracts\Security\Core\Encoder\BCryptPasswordEncoder;
-use Symfony\Contracts\Security\Core\Encoder\EncoderFactoryInterface;
-use Symfony\Contracts\Security\Core\Encoder\SelfSaltingEncoderInterface;
+use Symfony\Component\Security\Core\Encoder\BCryptPasswordEncoder;
+use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
+use Symfony\Component\Security\Core\Encoder\SelfSaltingEncoderInterface;
 
 /**
  * Class updating the hashed password in the user when there is a new password.

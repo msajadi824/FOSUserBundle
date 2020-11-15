@@ -11,8 +11,8 @@
 
 namespace FOS\UserBundle\DependencyInjection\Compiler;
 
-use Symfony\Contracts\DependencyInjection\Compiler\CompilerPassInterface;
-use Symfony\Contracts\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * Registers the additional validators according to the storage.

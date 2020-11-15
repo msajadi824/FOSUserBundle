@@ -12,9 +12,9 @@
 namespace FOS\UserBundle\Form\Type;
 
 use FOS\UserBundle\Form\DataTransformer\UserToUsernameTransformer;
-use Symfony\Contracts\Form\AbstractType;
-use Symfony\Contracts\Form\Extension\Core\Type\TextType;
-use Symfony\Contracts\Form\FormBuilderInterface;
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\FormBuilderInterface;
 
 /**
  * Form type for representing a UserInterface instance by its username string.

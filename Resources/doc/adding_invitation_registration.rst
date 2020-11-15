@@ -76,7 +76,7 @@ Next we map our ``Invitation`` entity to our ``User`` with a one-to-one associat
     namespace AppBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
-    use Symfony\Contracts\Validator\Constraints as Assert;
+    use Symfony\Component\Validator\Constraints as Assert;
 
     /** @ORM\Entity */
     class User extends \FOS\UserBundle\Model\User
@@ -112,8 +112,8 @@ Override the default registration form with your own::
 
     namespace AppBundle\Form;
 
-    use Symfony\Contracts\Form\AbstractType;
-    use Symfony\Contracts\Form\FormBuilderInterface;
+    use Symfony\Component\Form\AbstractType;
+    use Symfony\Component\Form\FormBuilderInterface;
 
     class RegistrationFormType extends AbstractType
     {
@@ -146,9 +146,9 @@ Create the invitation field::
 
     namespace AppBundle\Form;
 
-    use Symfony\Contracts\Form\AbstractType;
-    use Symfony\Contracts\Form\FormBuilderInterface;
-    use Symfony\Contracts\OptionsResolver\OptionsResolver;
+    use Symfony\Component\Form\AbstractType;
+    use Symfony\Component\Form\FormBuilderInterface;
+    use Symfony\Component\OptionsResolver\OptionsResolver;
     use Doctrine\ORM\EntityRepository;
     use AppBundle\Form\DataTransformer\InvitationToCodeTransformer;
 
@@ -176,7 +176,7 @@ Create the invitation field::
 
         public function getParent()
         {
-            return 'Symfony\Contracts\Form\Extension\Core\Type\TextType';
+            return 'Symfony\Component\Form\Extension\Core\Type\TextType';
         }
 
         public function getBlockPrefix()
@@ -200,8 +200,8 @@ Create the custom data transformer::
 
     use AppBundle\Entity\Invitation;
     use Doctrine\ORM\EntityManager;
-    use Symfony\Contracts\Form\DataTransformerInterface;
-    use Symfony\Contracts\Form\Exception\UnexpectedTypeException;
+    use Symfony\Component\Form\DataTransformerInterface;
+    use Symfony\Component\Form\Exception\UnexpectedTypeException;
 
     /**
      * Transforms an Invitation to an invitation code.

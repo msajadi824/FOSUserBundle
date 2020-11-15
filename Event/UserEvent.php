@@ -13,7 +13,7 @@ namespace FOS\UserBundle\Event;
 
 use FOS\UserBundle\Model\UserInterface;
 use Symfony\Contracts\EventDispatcher\Event;
-use Symfony\Contracts\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Request;
 
 class UserEvent extends Event
 {

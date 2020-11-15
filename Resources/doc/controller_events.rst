@@ -29,8 +29,8 @@ resetting to go to the homepage instead of the profile::
     use FOS\UserBundle\FOSUserEvents;
     use FOS\UserBundle\Event\FormEvent;
     use Symfony\Contracts\EventDispatcher\EventSubscriberInterface;
-    use Symfony\Contracts\HttpFoundation\RedirectResponse;
-    use Symfony\Contracts\Routing\Generator\UrlGeneratorInterface;
+    use Symfony\Component\HttpFoundation\RedirectResponse;
+    use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
     /**
      * Listener responsible to change the redirection at the end of the password resetting

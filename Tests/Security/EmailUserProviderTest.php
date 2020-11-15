@@ -44,7 +44,7 @@ class EmailUserProviderTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Contracts\Security\Core\Exception\UsernameNotFoundException
+     * @expectedException \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
      */
     public function testLoadUserByInvalidUsername()
     {
@@ -80,11 +80,11 @@ class EmailUserProviderTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Contracts\Security\Core\Exception\UnsupportedUserException
+     * @expectedException \Symfony\Component\Security\Core\Exception\UnsupportedUserException
      */
     public function testRefreshInvalidUser()
     {
-        $user = $this->getMockBuilder('Symfony\Contracts\Security\Core\User\UserInterface')->getMock();
+        $user = $this->getMockBuilder('Symfony\Component\Security\Core\User\UserInterface')->getMock();
 
         $this->userProvider->refreshUser($user);
     }

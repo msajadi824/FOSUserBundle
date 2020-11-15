@@ -19,8 +19,8 @@ use FOS\UserBundle\DependencyInjection\Compiler\CheckForSessionPass;
 use FOS\UserBundle\DependencyInjection\Compiler\InjectRememberMeServicesPass;
 use FOS\UserBundle\DependencyInjection\Compiler\InjectUserCheckerPass;
 use FOS\UserBundle\DependencyInjection\Compiler\ValidationPass;
-use Symfony\Contracts\DependencyInjection\ContainerBuilder;
-use Symfony\Contracts\HttpKernel\Bundle\Bundle;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * @author Matthieu Bontemps <matthieu@knplabs.com>

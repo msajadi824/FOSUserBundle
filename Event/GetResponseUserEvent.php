@@ -11,7 +11,7 @@
 
 namespace FOS\UserBundle\Event;
 
-use Symfony\Contracts\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Response;
 
 class GetResponseUserEvent extends UserEvent
 {

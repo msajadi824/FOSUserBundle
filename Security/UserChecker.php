@@ -11,12 +11,12 @@
 
 namespace FOS\UserBundle\Security;
 
-use Symfony\Contracts\Security\Core\Exception\AccountExpiredException;
-use Symfony\Contracts\Security\Core\Exception\CredentialsExpiredException;
-use Symfony\Contracts\Security\Core\Exception\DisabledException;
-use Symfony\Contracts\Security\Core\Exception\LockedException;
-use Symfony\Contracts\Security\Core\User\UserChecker as BaseUserChecker;
-use Symfony\Contracts\Security\Core\User\UserInterface as BaseUserInterface;
+use Symfony\Component\Security\Core\Exception\AccountExpiredException;
+use Symfony\Component\Security\Core\Exception\CredentialsExpiredException;
+use Symfony\Component\Security\Core\Exception\DisabledException;
+use Symfony\Component\Security\Core\Exception\LockedException;
+use Symfony\Component\Security\Core\User\UserChecker as BaseUserChecker;
+use Symfony\Component\Security\Core\User\UserInterface as BaseUserInterface;
 
 /**
  * UserChecker checks the user account flags.

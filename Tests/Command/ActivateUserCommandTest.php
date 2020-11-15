@@ -14,8 +14,8 @@ namespace FOS\UserBundle\Tests\Command;
 use FOS\UserBundle\Command\ActivateUserCommand;
 use FOS\UserBundle\Util\UserManipulator;
 use PHPUnit\Framework\TestCase;
-use Symfony\Contracts\Console\Application;
-use Symfony\Contracts\Console\Tester\CommandTester;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Tester\CommandTester;
 
 class ActivateUserCommandTest extends TestCase
 {
@@ -37,7 +37,7 @@ class ActivateUserCommandTest extends TestCase
     {
         $application = new Application();
 
-        $helper = $this->getMockBuilder('Symfony\Contracts\Console\Helper\QuestionHelper')
+        $helper = $this->getMockBuilder('Symfony\Component\Console\Helper\QuestionHelper')
             ->setMethods(['ask'])
             ->getMock();
 

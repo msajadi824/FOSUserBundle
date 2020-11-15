@@ -12,11 +12,11 @@
 namespace FOS\UserBundle\Command;
 
 use FOS\UserBundle\Util\UserManipulator;
-use Symfony\Contracts\Console\Command\Command;
-use Symfony\Contracts\Console\Input\InputArgument;
-use Symfony\Contracts\Console\Input\InputInterface;
-use Symfony\Contracts\Console\Output\OutputInterface;
-use Symfony\Contracts\Console\Question\Question;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Question\Question;
 
 /**
  * @author Antoine Hérault <antoine.herault@gmail.com>

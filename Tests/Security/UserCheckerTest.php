@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 class UserCheckerTest extends TestCase
 {
     /**
-     * @expectedException \Symfony\Contracts\Security\Core\Exception\LockedException
+     * @expectedException \Symfony\Component\Security\Core\Exception\LockedException
      * @expectedExceptionMessage User account is locked.
      */
     public function testCheckPreAuthFailsLockedOut()
@@ -28,7 +28,7 @@ class UserCheckerTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Contracts\Security\Core\Exception\DisabledException
+     * @expectedException \Symfony\Component\Security\Core\Exception\DisabledException
      * @expectedExceptionMessage User account is disabled.
      */
     public function testCheckPreAuthFailsIsEnabled()
@@ -39,7 +39,7 @@ class UserCheckerTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Contracts\Security\Core\Exception\AccountExpiredException
+     * @expectedException \Symfony\Component\Security\Core\Exception\AccountExpiredException
      * @expectedExceptionMessage User account has expired.
      */
     public function testCheckPreAuthFailsIsAccountNonExpired()
@@ -62,7 +62,7 @@ class UserCheckerTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Contracts\Security\Core\Exception\CredentialsExpiredException
+     * @expectedException \Symfony\Component\Security\Core\Exception\CredentialsExpiredException
      * @expectedExceptionMessage User credentials have expired.
      */
     public function testCheckPostAuthFailsIsCredentialsNonExpired()

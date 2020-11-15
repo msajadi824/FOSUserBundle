@@ -16,9 +16,9 @@ use FOS\UserBundle\FOSUserEvents;
 use FOS\UserBundle\Mailer\MailerInterface;
 use FOS\UserBundle\Util\TokenGeneratorInterface;
 use Symfony\Contracts\EventDispatcher\EventSubscriberInterface;
-use Symfony\Contracts\HttpFoundation\RedirectResponse;
-use Symfony\Contracts\HttpFoundation\Session\SessionInterface;
-use Symfony\Contracts\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 class EmailConfirmationListener implements EventSubscriberInterface
 {

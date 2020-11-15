@@ -12,9 +12,9 @@
 namespace FOS\UserBundle\DependencyInjection;
 
 use FOS\UserBundle\Form\Type;
-use Symfony\Contracts\Config\Definition\Builder\ArrayNodeDefinition;
-use Symfony\Contracts\Config\Definition\Builder\TreeBuilder;
-use Symfony\Contracts\Config\Definition\ConfigurationInterface;
+use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use Symfony\Component\Config\Definition\Builder\TreeBuilder;
+use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
  * This class contains the configuration information for the bundle.

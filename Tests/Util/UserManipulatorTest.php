@@ -396,7 +396,7 @@ class UserManipulatorTest extends TestCase
      */
     protected function getRequestStackMock($once = true)
     {
-        $requestStackMock = $this->getMockBuilder('Symfony\Contracts\HttpFoundation\RequestStack')->getMock();
+        $requestStackMock = $this->getMockBuilder('Symfony\Component\HttpFoundation\RequestStack')->getMock();
 
         $requestStackMock->expects($once ? $this->once() : $this->never())
             ->method('getCurrentRequest')
