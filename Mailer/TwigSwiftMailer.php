@@ -12,7 +12,7 @@
 namespace FOS\UserBundle\Mailer;
 
 use FOS\UserBundle\Model\UserInterface;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Contracts\Routing\Generator\UrlGeneratorInterface;
 
 /**
  * @author Christophe Coevoet <stof@notk.org>

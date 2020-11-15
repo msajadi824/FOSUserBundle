@@ -11,8 +11,8 @@
 
 namespace FOS\UserBundle\Tests\Form\Type;
 
-use Symfony\Component\Form\Extension\Validator\Type\FormTypeValidatorExtension;
-use Symfony\Component\Validator\ConstraintViolationList;
+use Symfony\Contracts\Form\Extension\Validator\Type\FormTypeValidatorExtension;
+use Symfony\Contracts\Validator\ConstraintViolationList;
 
 /**
  * Class ValidatorExtensionTypeTestCase
@@ -27,7 +27,7 @@ class ValidatorExtensionTypeTestCase extends TypeTestCase
      */
     protected function getTypeExtensions()
     {
-        $validator = $this->getMockBuilder('Symfony\Component\Validator\Validator\ValidatorInterface')->getMock();
+        $validator = $this->getMockBuilder('Symfony\Contracts\Validator\Validator\ValidatorInterface')->getMock();
         $validator->method('validate')->will($this->returnValue(new ConstraintViolationList()));
 
         return [

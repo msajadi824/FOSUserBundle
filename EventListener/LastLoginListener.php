@@ -16,8 +16,8 @@ use FOS\UserBundle\FOSUserEvents;
 use FOS\UserBundle\Model\UserInterface;
 use FOS\UserBundle\Model\UserManagerInterface;
 use Symfony\Contracts\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
-use Symfony\Component\Security\Http\SecurityEvents;
+use Symfony\Contracts\Security\Http\Event\InteractiveLoginEvent;
+use Symfony\Contracts\Security\Http\SecurityEvents;
 
 class LastLoginListener implements EventSubscriberInterface
 {

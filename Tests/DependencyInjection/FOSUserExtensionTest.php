@@ -13,8 +13,8 @@ namespace FOS\UserBundle\Tests\DependencyInjection;
 
 use FOS\UserBundle\DependencyInjection\FOSUserExtension;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\Yaml\Parser;
+use Symfony\Contracts\DependencyInjection\ContainerBuilder;
+use Symfony\Contracts\Yaml\Parser;
 
 class FOSUserExtensionTest extends TestCase
 {
@@ -27,7 +27,7 @@ class FOSUserExtensionTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     * @expectedException \Symfony\Contracts\Config\Definition\Exception\InvalidConfigurationException
      */
     public function testUserLoadThrowsExceptionUnlessDatabaseDriverSet()
     {
@@ -38,7 +38,7 @@ class FOSUserExtensionTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     * @expectedException \Symfony\Contracts\Config\Definition\Exception\InvalidConfigurationException
      */
     public function testUserLoadThrowsExceptionUnlessDatabaseDriverIsValid()
     {
@@ -49,7 +49,7 @@ class FOSUserExtensionTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     * @expectedException \Symfony\Contracts\Config\Definition\Exception\InvalidConfigurationException
      */
     public function testUserLoadThrowsExceptionUnlessFirewallNameSet()
     {
@@ -60,7 +60,7 @@ class FOSUserExtensionTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     * @expectedException \Symfony\Contracts\Config\Definition\Exception\InvalidConfigurationException
      */
     public function testUserLoadThrowsExceptionUnlessGroupModelClassSet()
     {
@@ -71,7 +71,7 @@ class FOSUserExtensionTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     * @expectedException \Symfony\Contracts\Config\Definition\Exception\InvalidConfigurationException
      */
     public function testUserLoadThrowsExceptionUnlessUserModelClassSet()
     {
@@ -82,7 +82,7 @@ class FOSUserExtensionTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     * @expectedException \Symfony\Contracts\Config\Definition\Exception\InvalidConfigurationException
      */
     public function testCustomDriverWithoutManager()
     {
@@ -382,7 +382,7 @@ class FOSUserExtensionTest extends TestCase
         if (method_exists($definition, 'getFactory')) {
             $factory = $definition->getFactory();
 
-            $this->assertInstanceOf('Symfony\Component\DependencyInjection\Reference', $factory[0]);
+            $this->assertInstanceOf('Symfony\Contracts\DependencyInjection\Reference', $factory[0]);
             $this->assertSame('fos_user.doctrine_registry', (string) $factory[0]);
             $this->assertSame('getManager', $factory[1]);
         } else {

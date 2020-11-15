@@ -44,7 +44,7 @@ class UserProviderTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
+     * @expectedException \Symfony\Contracts\Security\Core\Exception\UsernameNotFoundException
      */
     public function testLoadUserByInvalidUsername()
     {
@@ -80,7 +80,7 @@ class UserProviderTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
+     * @expectedException \Symfony\Contracts\Security\Core\Exception\UsernameNotFoundException
      */
     public function testRefreshDeleted()
     {
@@ -97,11 +97,11 @@ class UserProviderTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Security\Core\Exception\UnsupportedUserException
+     * @expectedException \Symfony\Contracts\Security\Core\Exception\UnsupportedUserException
      */
     public function testRefreshInvalidUser()
     {
-        $user = $this->getMockBuilder('Symfony\Component\Security\Core\User\UserInterface')->getMock();
+        $user = $this->getMockBuilder('Symfony\Contracts\Security\Core\User\UserInterface')->getMock();
         $this->userManager->expects($this->any())
             ->method('getClass')
             ->will($this->returnValue(get_class($user)));
@@ -110,7 +110,7 @@ class UserProviderTest extends TestCase
     }
 
     /**
-     * @expectedException \Symfony\Component\Security\Core\Exception\UnsupportedUserException
+     * @expectedException \Symfony\Contracts\Security\Core\Exception\UnsupportedUserException
      */
     public function testRefreshInvalidUserClass()
     {

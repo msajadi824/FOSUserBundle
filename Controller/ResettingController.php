@@ -22,9 +22,9 @@ use FOS\UserBundle\Model\UserManagerInterface;
 use FOS\UserBundle\Util\TokenGeneratorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Symfony\Component\HttpFoundation\RedirectResponse;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Contracts\HttpFoundation\RedirectResponse;
+use Symfony\Contracts\HttpFoundation\Request;
+use Symfony\Contracts\HttpFoundation\Response;
 
 /**
  * Controller managing the resetting of the password.

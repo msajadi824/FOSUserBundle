@@ -12,7 +12,7 @@
 namespace FOS\UserBundle\Security;
 
 use FOS\UserBundle\Model\UserInterface;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Contracts\HttpFoundation\Response;
 
 interface LoginManagerInterface
 {

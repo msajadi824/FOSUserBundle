@@ -11,9 +11,9 @@
 
 namespace FOS\UserBundle\Tests\Form\Type;
 
-use Symfony\Component\Form\FormBuilder;
-use Symfony\Component\Form\Forms;
-use Symfony\Component\Form\Test\TypeTestCase as BaseTypeTestCase;
+use Symfony\Contracts\Form\FormBuilder;
+use Symfony\Contracts\Form\Forms;
+use Symfony\Contracts\Form\Test\TypeTestCase as BaseTypeTestCase;
 
 /**
  * Class TypeTestCase.

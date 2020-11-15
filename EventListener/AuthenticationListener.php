@@ -17,7 +17,7 @@ use FOS\UserBundle\FOSUserEvents;
 use FOS\UserBundle\Security\LoginManagerInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Symfony\Contracts\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\Security\Core\Exception\AccountStatusException;
+use Symfony\Contracts\Security\Core\Exception\AccountStatusException;
 
 class AuthenticationListener implements EventSubscriberInterface
 {

@@ -24,7 +24,7 @@ property and its validators.
 
     use FOS\UserBundle\Model\User as BaseUser;
     use Doctrine\ORM\Mapping as ORM;
-    use Symfony\Component\Validator\Constraints as Assert;
+    use Symfony\Contracts\Validator\Constraints as Assert;
 
     class User extends BaseUser
     {
@@ -73,8 +73,8 @@ the form type hierarchy and then adds the custom ``name`` field.
 
     namespace AppBundle\Form;
 
-    use Symfony\Component\Form\AbstractType;
-    use Symfony\Component\Form\FormBuilderInterface;
+    use Symfony\Contracts\Form\AbstractType;
+    use Symfony\Contracts\Form\FormBuilderInterface;
 
     class RegistrationType extends AbstractType
     {

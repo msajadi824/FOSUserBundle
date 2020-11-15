@@ -12,12 +12,12 @@
 namespace FOS\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use Symfony\Component\Security\Core\Security;
-use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
+use Symfony\Contracts\HttpFoundation\Request;
+use Symfony\Contracts\HttpFoundation\Response;
+use Symfony\Contracts\HttpFoundation\Session\Session;
+use Symfony\Contracts\Security\Core\Exception\AuthenticationException;
+use Symfony\Contracts\Security\Core\Security;
+use Symfony\Contracts\Security\Csrf\CsrfTokenManagerInterface;
 
 /**
  * Controller managing security.
