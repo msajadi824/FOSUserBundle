@@ -339,7 +339,7 @@ class UserManipulatorTest extends TestCase
             ->will($this->returnValue($user))
             ->with($this->equalTo($username));
 
-        $eventDispatcherMock = $this->getMockBuilder('Symfony\Component\EventDispatcher\EventDispatcherInterface')->getMock();
+        $eventDispatcherMock = $this->getMockBuilder('Symfony\Contracts\EventDispatcher\EventDispatcherInterface')->getMock();
         $requestStackMock = $this->getRequestStackMock(false);
 
         $manipulator = new UserManipulator($userManagerMock, $eventDispatcherMock, $requestStackMock);
@@ -362,7 +362,7 @@ class UserManipulatorTest extends TestCase
             ->will($this->returnValue($user))
             ->with($this->equalTo($username));
 
-        $eventDispatcherMock = $this->getMockBuilder('Symfony\Component\EventDispatcher\EventDispatcherInterface')->getMock();
+        $eventDispatcherMock = $this->getMockBuilder('Symfony\Contracts\EventDispatcher\EventDispatcherInterface')->getMock();
         $requestStackMock = $this->getRequestStackMock(false);
 
         $manipulator = new UserManipulator($userManagerMock, $eventDispatcherMock, $requestStackMock);
@@ -380,7 +380,7 @@ class UserManipulatorTest extends TestCase
      */
     protected function getEventDispatcherMock($event, $once = true)
     {
-        $eventDispatcherMock = $this->getMockBuilder('Symfony\Component\EventDispatcher\EventDispatcherInterface')->getMock();
+        $eventDispatcherMock = $this->getMockBuilder('Symfony\Contracts\EventDispatcher\EventDispatcherInterface')->getMock();
 
         $eventDispatcherMock->expects($once ? $this->once() : $this->never())
             ->method('dispatch')

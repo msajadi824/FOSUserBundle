@@ -20,7 +20,7 @@ use FOS\UserBundle\FOSUserEvents;
 use FOS\UserBundle\Model\GroupInterface;
 use FOS\UserBundle\Model\GroupManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
