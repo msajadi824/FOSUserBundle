@@ -14,8 +14,8 @@ namespace FOS\UserBundle\Tests\Command;
 use FOS\UserBundle\Command\DemoteUserCommand;
 use FOS\UserBundle\Util\UserManipulator;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Console\Application;
-use Symfony\Component\Console\Tester\CommandTester;
+use Symfony\Contracts\Console\Application;
+use Symfony\Contracts\Console\Tester\CommandTester;
 
 class DemoteUserCommandTest extends TestCase
 {
@@ -38,7 +38,7 @@ class DemoteUserCommandTest extends TestCase
     {
         $application = new Application();
 
-        $helper = $this->getMockBuilder('Symfony\Component\Console\Helper\QuestionHelper')
+        $helper = $this->getMockBuilder('Symfony\Contracts\Console\Helper\QuestionHelper')
             ->setMethods(['ask'])
             ->getMock();
 

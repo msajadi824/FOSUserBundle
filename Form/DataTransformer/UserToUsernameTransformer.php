@@ -13,8 +13,8 @@ namespace FOS\UserBundle\Form\DataTransformer;
 
 use FOS\UserBundle\Model\UserInterface;
 use FOS\UserBundle\Model\UserManagerInterface;
-use Symfony\Component\Form\DataTransformerInterface;
-use Symfony\Component\Form\Exception\UnexpectedTypeException;
+use Symfony\Contracts\Form\DataTransformerInterface;
+use Symfony\Contracts\Form\Exception\UnexpectedTypeException;
 
 /**
  * Transforms between a UserInterface instance and a username string.

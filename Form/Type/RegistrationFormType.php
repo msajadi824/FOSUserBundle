@@ -11,12 +11,12 @@
 
 namespace FOS\UserBundle\Form\Type;
 
-use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
-use Symfony\Component\Form\Extension\Core\Type\PasswordType;
-use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
-use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Contracts\Form\AbstractType;
+use Symfony\Contracts\Form\Extension\Core\Type\EmailType;
+use Symfony\Contracts\Form\Extension\Core\Type\PasswordType;
+use Symfony\Contracts\Form\Extension\Core\Type\RepeatedType;
+use Symfony\Contracts\Form\FormBuilderInterface;
+use Symfony\Contracts\OptionsResolver\OptionsResolver;
 
 class RegistrationFormType extends AbstractType
 {

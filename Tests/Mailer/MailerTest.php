@@ -86,7 +86,7 @@ class MailerTest extends TestCase
                     $this->getMockBuilder('\Swift_Events_EventDispatcher')->getMock()
                 )
             ),
-            $this->getMockBuilder('Symfony\Component\Routing\Generator\UrlGeneratorInterface')->getMock(),
+            $this->getMockBuilder('Symfony\Contracts\Routing\Generator\UrlGeneratorInterface')->getMock(),
             $this->getTemplating(),
             [
                 'confirmation.template' => 'foo',

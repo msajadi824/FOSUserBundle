@@ -13,7 +13,7 @@ namespace FOS\UserBundle\Validator;
 
 use FOS\UserBundle\Model\UserInterface;
 use FOS\UserBundle\Util\CanonicalFieldsUpdater;
-use Symfony\Component\Validator\ObjectInitializerInterface;
+use Symfony\Contracts\Validator\ObjectInitializerInterface;
 
 /**
  * Automatically updates the canonical fields before validation.

@@ -11,9 +11,9 @@
 
 namespace FOS\UserBundle\DependencyInjection\Compiler;
 
-use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Reference;
+use Symfony\Contracts\DependencyInjection\Compiler\CompilerPassInterface;
+use Symfony\Contracts\DependencyInjection\ContainerBuilder;
+use Symfony\Contracts\DependencyInjection\Reference;
 
 /**
  * Inject RememberMeServices into LoginManager.

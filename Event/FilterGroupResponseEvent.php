@@ -12,8 +12,8 @@
 namespace FOS\UserBundle\Event;
 
 use FOS\UserBundle\Model\GroupInterface;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Contracts\HttpFoundation\Request;
+use Symfony\Contracts\HttpFoundation\Response;
 
 class FilterGroupResponseEvent extends GroupEvent
 {

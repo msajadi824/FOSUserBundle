@@ -11,8 +11,8 @@
 
 namespace FOS\UserBundle\Event;
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Contracts\HttpFoundation\Request;
+use Symfony\Contracts\Security\Core\User\UserInterface;
 
 /**
  * Response user event that allows null user.

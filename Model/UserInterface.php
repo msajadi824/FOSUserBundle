@@ -11,8 +11,8 @@
 
 namespace FOS\UserBundle\Model;
 
-use Symfony\Component\Security\Core\User\EquatableInterface;
-use Symfony\Component\Security\Core\User\UserInterface as BaseUserInterface;
+use Symfony\Contracts\Security\Core\User\EquatableInterface;
+use Symfony\Contracts\Security\Core\User\UserInterface as BaseUserInterface;
 
 /**
  * @internal Only for back compatibility. Remove / merge when dropping support for Symfony 4
@@ -272,14 +272,14 @@ interface FosUserInterface extends \Serializable
 }
 
 // This is required to support apps that explicitly check if a user is an instance of AdvancedUserInterface
-if (interface_exists('\Symfony\Component\Security\Core\User\AdvancedUserInterface')) {
+if (interface_exists('\Symfony\Contracts\Security\Core\User\AdvancedUserInterface')) {
     /**
      * @author Thibault Duplessis <thibault.duplessis@gmail.com>
      * @author Johannes M. Schmitt <schmittjoh@gmail.com>
      *
      * @deprecated since Symfony 4.1. Remove in Nov 2023 (End of support for security fixes SF 4.4)
      */
-    interface UserInterface extends FosUserInterface, \Symfony\Component\Security\Core\User\AdvancedUserInterface
+    interface UserInterface extends FosUserInterface, \Symfony\Contracts\Security\Core\User\AdvancedUserInterface
     {
     }
 } else {

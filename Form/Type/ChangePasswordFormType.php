@@ -11,13 +11,13 @@
 
 namespace FOS\UserBundle\Form\Type;
 
-use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\PasswordType;
-use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
-use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Security\Core\Validator\Constraints\UserPassword;
-use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Contracts\Form\AbstractType;
+use Symfony\Contracts\Form\Extension\Core\Type\PasswordType;
+use Symfony\Contracts\Form\Extension\Core\Type\RepeatedType;
+use Symfony\Contracts\Form\FormBuilderInterface;
+use Symfony\Contracts\OptionsResolver\OptionsResolver;
+use Symfony\Contracts\Security\Core\Validator\Constraints\UserPassword;
+use Symfony\Contracts\Validator\Constraints\NotBlank;
 
 class ChangePasswordFormType extends AbstractType
 {
