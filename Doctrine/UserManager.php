@@ -12,7 +12,7 @@
 namespace FOS\UserBundle\Doctrine;
 
 use Doctrine\ORM\EntityManager;
-use Doctrine\Common\Persistence\ObjectRepository;
+use Doctrine\ORM\ObjectRepository;
 use FOS\UserBundle\Model\UserInterface;
 use FOS\UserBundle\Model\UserManager as BaseUserManager;
 use FOS\UserBundle\Util\CanonicalFieldsUpdater;

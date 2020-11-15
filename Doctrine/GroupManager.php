@@ -11,15 +11,15 @@
 
 namespace FOS\UserBundle\Doctrine;
 
-use Doctrine\Common\Persistence\ObjectManager;
-use Doctrine\Common\Persistence\ObjectRepository;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\ObjectRepository;
 use FOS\UserBundle\Model\GroupInterface;
 use FOS\UserBundle\Model\GroupManager as BaseGroupManager;
 
 class GroupManager extends BaseGroupManager
 {
     /**
-     * @var ObjectManager
+     * @var EntityManager
      */
     protected $objectManager;
 
@@ -38,7 +38,7 @@ class GroupManager extends BaseGroupManager
      *
      * @param string $class
      */
-    public function __construct(ObjectManager $om, $class)
+    public function __construct(EntityManager $om, $class)
     {
         $this->objectManager = $om;
         $this->repository = $om->getRepository($class);
